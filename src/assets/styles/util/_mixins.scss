@@ -1,0 +1,10 @@
+@mixin main_button {
+        padding: 10px 35px;
+        background: $buttons_color;
+        border-radius: 19px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        color: $whitecolor;
+    
+}

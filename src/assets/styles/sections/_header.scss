@@ -1,0 +1,40 @@
+@import "../util/mixins";
+@import "../util/colors";
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 30px 0;
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .menu_item {
+        padding-right: 33px;
+    }
+
+    .menu_item:last-child{
+        padding-right: 0;
+    }
+
+    .login_section {
+        display: flex;
+        flex-direction: row;
+        align-items: center;   
+    }
+
+    .login {
+        padding-right: 33px;
+    }
+    
+    .btn a {
+        @include main_button;
+    }
+
+}
+@import "../util/media";
