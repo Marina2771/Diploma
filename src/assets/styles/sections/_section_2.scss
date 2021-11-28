@@ -1,0 +1,62 @@
+@import "../util/mixins";
+@import "../util/colors";
+
+.section_2_contentplace {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+.section_2.title h1{
+    padding-right: 147px;
+    @include section_2_title;
+}
+
+.section_2_dog1 img{
+    padding-top: 27px;
+    max-width: 100%;//не применяется
+}
+.Patients {
+    padding-bottom: 29px;
+    @include border;
+}
+
+.Patients h1{
+    @include textblock_title;
+}
+
+.Patients h1:first-child{
+    padding-bottom: 19px;
+}
+
+.Patients p{
+    @include textblock_subtitle;
+}
+
+.Tailored_care h1{
+    padding-top: 29px;
+    padding-bottom: 19px;
+    @include textblock_title;
+}
+
+.Tailored_care p{
+    @include textblock_subtitle;
+}
+
+.Tailored_care h3{
+    padding-top: 7px;
+    padding-bottom: 41px;
+    @include textblock_15px;
+    @include border;
+}
+
+.Support h1{
+    padding-top: 41px;
+    padding-bottom: 19px;
+    @include textblock_title;
+}
+
+.Support p{
+    @include text_11px;
+}
