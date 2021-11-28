@@ -1,6 +1,14 @@
-@import "/util/colors";
+@import "../util/colors";
 
-@mixin main_button {
+@mixin menu_item{
+        font-size: 14px;
+        line-height: 18px;
+        padding-right: 33px;
+        text-decoration: none;
+        color:$blackcolor;    
+}
+
+@mixin main_button{
         padding: 10px 35px;
         background: $buttons_color;
         border-radius: 19px;
@@ -10,5 +18,24 @@
         font-size: 14px;
         line-height: 18px;
         color: $whitecolor;
-    
+}
+
+@mixin hero_title{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 55px;
+        line-height: 67px;
+        text-align: center;
+        color:$blackcolor;
+}
+
+@mixin hero_subtitle{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 28px;
+        text-align: center;
+        color:$blackcolor;
 }
