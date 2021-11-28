@@ -1,0 +1,46 @@
+@import "../util/mixins";
+@import "../util/colors";
+
+.section_how_it_works{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:$how_it_works_bg;
+}
+
+.how_it_works_content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.content_item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content_item h2{
+    @extend .textblock_title;
+    font-weight: normal;
+}
+
+.content_item p{
+    @include textblock_subtitle;
+    text-align: center;
+}
+
+.content_item h3{
+    @include text_11px;
+    text-align: center;
+}
+
+.content_item img{
+    max-width: 100%;
+}
+
+.btn a{
+    @include main_button;
+}
