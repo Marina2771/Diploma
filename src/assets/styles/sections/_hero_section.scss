@@ -1,0 +1,50 @@
+@import "../util/colors";
+
+.hero_section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color:$hero_section;
+}
+
+.hero_left img{
+    max-width: 100%;
+    margin-top: -170px;
+}
+
+.hero_middle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 102px;
+}
+
+.hero_title{
+    padding-bottom: 33px;
+}
+
+.hero_title p{
+    @include hero_title;
+}
+
+.hero_subtitle{
+    padding-bottom: 23px;
+}
+
+.hero_subtitle h2{
+    @include hero_subtitle;
+}
+
+.hero_subtitle span{
+    color: $login_color;
+}
+
+.btn a{
+    @include main_button;
+}
+
+.rabbit_image img{
+    max-width: 100%;
+    padding-left: 300px;
+}

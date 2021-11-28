@@ -1,7 +1,7 @@
-@import "/util/mixins";
-@import "/util/colors";
+@import "../util/mixins";
+@import "../util/colors";
 
-.header {
+.header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -10,31 +10,30 @@
     padding-top: 30px;
     padding-bottom: 30px;
 
-    .menu {
+    .menu{
         display: flex;
         flex-direction: row;
     }
 
-    .menu_item {
-        font-size: 14px; // не применяется размер
-        line-height: 18px;
-        padding-right: 33px;
-        text-decoration: none;
-        color: #000000; //не изменяется цвет ссылок на чёрный
-        
+    .menu_item a{
+        @include menu_item;
     }
 
     .menu_item:last-child{
         padding-right: 0;
     }
 
-    .login_section {
+    .logo img{
+        max-width: 100%; 
+    }
+
+    .login_section{
         display: flex;
         flex-direction: row;
         align-items: center;
     }
 
-    .login {
+    .login{
         font-size: 14px; // не применяется размер
         line-height: 18px;
         padding-right: 33px;
