@@ -1,0 +1,50 @@
+@import "/util/mixins";
+@import "/util/colors";
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .menu_item {
+        font-size: 14px; // не применяется размер
+        line-height: 18px;
+        padding-right: 33px;
+        text-decoration: none;
+        color: #000000; //не изменяется цвет ссылок на чёрный
+        
+    }
+
+    .menu_item:last-child{
+        padding-right: 0;
+    }
+
+    .login_section {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .login {
+        font-size: 14px; // не применяется размер
+        line-height: 18px;
+        padding-right: 33px;
+        color: $login_color;
+
+    }
+    
+    .btn a {
+        @include main_button;
+    }
+
+}
+@import "../util/media";
