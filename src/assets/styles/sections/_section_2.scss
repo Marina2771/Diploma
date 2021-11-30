@@ -13,9 +13,16 @@
     @include section_2_title;
 }
 
+.section_2_dog1{
+    flex: 0 0 280px;
+}
+
 .section_2_dog1 img{
     padding-top: 27px;
-    max-width: 100%;//не применяется
+    //width: 100%;
+    //height: auto;
+    //max-width: 280px; //не применяется
+    width: 43%;
 }
 .Patients {
     padding-bottom: 29px;

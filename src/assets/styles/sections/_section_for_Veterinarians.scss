@@ -1,0 +1,29 @@
+@import "../util/mixins";
+@import "../util/colors";
+
+.for_veterinarians {
+    background-color:$for_veterinarians_BG;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.right_part h1{
+    @include for_vet_title;
+    margin-top: 150px;
+}
+
+.right_part h2{
+    @include section_2_title;
+    margin-top: 8px;
+    margin-bottom: 43px;
+}
+
+.right_part h3{
+    @include textblock_subtitle;
+    margin-bottom: 26px;
+}
+
+.right_part .btn a{
+    @include main_button;
+}
