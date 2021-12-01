@@ -24,8 +24,7 @@
 .content_item{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    
+    justify-content: center;  
 }
 
 .content_item img{
@@ -42,8 +41,18 @@
     text-align: center;
 }  
 
+.subtitle p{
+    @include textblock_subtitle;
+    text-align: center;
+}
+
 .content_item p{
     @include text_11px;
+    text-align: center;
+}
+
+.subtitle p{
+    @include textblock_subtitle;
     text-align: center;
 }
 
