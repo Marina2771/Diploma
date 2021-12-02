@@ -1,0 +1,45 @@
+@import "../util/mixins";
+@import "../util/colors";
+
+.section_slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section_slider__title h2{
+    @include section_2_title;
+    font-weight: bold;
+}
+
+.section_slider__subtitle span{
+    color: $login_color;
+}
+
+.section_slider__blocks{
+    display: flex;
+    flex-direction: row;
+}
+
+.slider__block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:$slider_bg;
+    width: 1072px;
+    height: 354px;
+    border-radius: 20px;
+}
+
+.slider__sign{
+    display: flex;
+    flex-direction: row;
+}
+
+.slider__image img{
+    width: auto;
+}
+
+.slider__sign img{
+    max-width: 100%;
+    width: auto;
+}
