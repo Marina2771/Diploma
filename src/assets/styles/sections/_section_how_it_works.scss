@@ -17,49 +17,53 @@
 .how_it_works_content{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-bottom: 65px;
+    flex-wrap: wrap;
 }
-//.content_item :first-child, .content_item:last-child{
-    //padding-right: 120px;
-    //padding-left: 120px;
-//}
 
 .content_item{
+    width: calc(100% / 3 - 100px / 3);
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: calc((100% - 2*50px)/3);
+    justify-content: center; 
+    
+    &:first-child p{
+        font-size: 16px;
+    }
 }
 
-.content_item img{
+.content_item .img{
     width: 100%;
-    height: 192px;
-    object-fit: contain;
-    padding-bottom: 31px;
+    position: relative;
 }
 
-.content_item :last-child img{
-    padding-bottom: 16px;
-}
-
-.content_item h2{
+.content_item h5{
     @include content_title;
     padding-bottom: 11px;
 }
 
-.content_item h4{
+.content_item {
     @include textblock_subtitle;
     text-align: center;
 }  
 
-.content_item h3{
+.subtitle p{
+    @include textblock_subtitle;
+    text-align: center;
+}
+
+.content_item p{
     @include text_11px;
     text-align: center;
 }
 
-.section_how_it_works .btn a{
+.subtitle p{
+    @include textblock_subtitle;
+    text-align: center;
+}
+
+.how_it_works_title .btn a{
     @include main_button;
     margin-bottom: 52px;
 }
