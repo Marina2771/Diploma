@@ -1,0 +1,69 @@
+@import "../util/mixins";
+@import "../util/colors";
+
+.section_how_it_works{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:$how_it_works;
+}
+
+.how_it_works_title h1{
+    @include section_2_title;
+    margin-top: 60px;
+    margin-bottom: 65px;
+}
+
+.how_it_works_content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 65px;
+    flex-wrap: wrap;
+}
+
+.content_item{
+    width: calc(100% / 3 - 100px / 3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    
+    &:first-child p{
+        font-size: 16px;
+    }
+}
+
+.content_item .img{
+    width: 100%;
+    position: relative;
+}
+
+.content_item h5{
+    @include content_title;
+    padding-bottom: 11px;
+}
+
+.content_item {
+    @include textblock_subtitle;
+    text-align: center;
+}  
+
+.subtitle p{
+    @include textblock_subtitle;
+    text-align: center;
+}
+
+.content_item p{
+    @include text_11px;
+    text-align: center;
+}
+
+.subtitle p{
+    @include textblock_subtitle;
+    text-align: center;
+}
+
+.how_it_works_title .btn a{
+    @include main_button;
+    margin-bottom: 52px;
+}
