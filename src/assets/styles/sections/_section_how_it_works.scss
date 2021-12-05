@@ -43,7 +43,7 @@
     padding-bottom: 11px;
 }
 
-.content_item {
+.content_item h4{
     @include textblock_subtitle;
     text-align: center;
 }  

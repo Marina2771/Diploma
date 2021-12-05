@@ -100,3 +100,14 @@
         text-align: center;
         color:$login_color;              
 }
+
+@mixin for_vet_title {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.96px;
+        text-transform: uppercase;
+        color: $for_veterinarians_title;       
+}
