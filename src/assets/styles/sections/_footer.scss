@@ -1,0 +1,20 @@
+@import "../util/mixins";
+@import "../util/colors";
+
+.footer {
+    background-color: $footer_bg;
+}
+
+.footer_items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+//.item_column{
+    display: flex;
+    flex-direction: column;
+    text-decoration: unset;
+    @include footer_text;
+}
