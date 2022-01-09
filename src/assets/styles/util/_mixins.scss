@@ -130,23 +130,23 @@
         color: $for_veterinarians_title;       
 }
 
-@mixin footer_title {
+@mixin footertitle {
         font-family: Roboto;
-        font-style: regular;
+        font-style: normal;
         font-size: 12px;
         line-height: 14px;
         text-align: left;
         letter-spacing: 0.6px;
         text-decoration: none;
-        color: $footer_title;
+        color: $footertitle;
 }
 
-@mixin footer_text {
+@mixin footertext {
         font-family: Roboto;
-        font-style: regular;
+        font-style: normal;
         font-size: 14px;
         line-height: 18px;
         text-align: left;
         text-decoration: none;
-        color: $footer_text;
+        color: $footertext;
 }

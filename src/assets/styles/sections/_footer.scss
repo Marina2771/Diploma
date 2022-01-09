@@ -2,24 +2,28 @@
 @import "../util/colors";
 
 .footer {
-    background-color: $footer_bg;
+    background-color: $footerbg;
 }
 
 .footer_items {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
 }
 
-.item_column a{
+.item_column {
     display: flex;
     flex-direction: column;
     text-decoration: unset;
     @include footer_text;
 }
 
-.item_title a{
+.item_title {
     padding-bottom: 16px;
     @include footer_title;
+}
+
+.instagram, .facebook, .twitter, .yahoo, .google {
+    width: 24px;
+    height: 24px;
 }
