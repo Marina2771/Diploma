@@ -85,6 +85,24 @@
         color:$blackcolor;        
 }
 
+@mixin text_13px {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 23px;
+        color:$blackcolor;        
+}
+
+@mixin date_text {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 23px;
+        color: $date;  
+}
+
 @mixin border {
         border-bottom-width: 1px;
         border-bottom-style: solid;

@@ -1,0 +1,97 @@
+@import "../util/mixins";
+@import "../util/colors";
+
+.in_the_wild{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color:$in_the_wild;
+}
+
+.in_the_wild.cards_section{
+    display: flex;
+    flex-direction: column;
+}
+
+.cards_section.text{
+    display: flex;
+    flex-direction: column;
+}
+
+.cards_section.title h2{
+    @include section_2_title;
+    margin-top: 58px;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+.cards_section.subtitle p{
+    @include text_13px;
+    margin-bottom: 76px;
+}
+
+.card_blocks{
+    display: flex;
+    flex-direction: row;
+}
+
+.cards_container{
+    margin-left: 36px;
+    margin-right: 36px;
+}
+
+.cards_section.block_left{
+    width: 384px;
+    background-color: $whitecolor;
+    margin-right: 32px;
+}
+
+.cards_section.block_right{
+    width: 384px;
+    background-color: $whitecolor;
+}
+
+.date p{
+    @include date_text;
+    margin-top: 35px;
+    margin-bottom: 16px;
+}
+
+.block_title p{
+    @include content_title;
+    color: $blackcolor;
+    text-align: left;
+}
+
+.block_subtitle p{
+    @include text_11px;
+    margin-top: 12px;
+    margin-bottom: 32px;
+}
+
+.block_link {
+    margin-bottom: 36px;
+}
+
+.block.img img{
+    width: 384px;
+    height: 238px;
+}
+
+.cards_section.btn{
+    margin-top: 49px;
+    margin-bottom: 57px;
+    display: flex;
+    justify-content: center;
+}
+
+.in_the_wild.left_img img{
+    height: 277px;
+    margin-top: 312px;
+}
+
+.in_the_wild.right_img img{
+    height: 220px;
+    margin-top: 452px;
+}

@@ -8,10 +8,6 @@
     justify-content: center;
 }
 
-.left_part{
-    width: 100%;
-}
-
 .right_part h1{
     @include for_vet_title;
     margin-top: 150px;
@@ -25,9 +21,9 @@
 
 .right_part h3{
     @include textblock_subtitle;
+    margin-bottom: 26px;
 }
 
 .right_part .btn a{
     @include main_button;
-    margin-top: 26px;
 }
