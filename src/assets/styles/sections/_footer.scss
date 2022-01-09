@@ -12,9 +12,14 @@
 
 }
 
-//.item_column{
+.item_column a{
     display: flex;
     flex-direction: column;
     text-decoration: unset;
     @include footer_text;
+}
+
+.item_title a{
+    padding-bottom: 16px;
+    @include footer_title;
 }
