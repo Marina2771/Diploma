@@ -1,0 +1,17 @@
+@import "../util/mixins";
+@import "../util/colors";
+
+.brands{
+    background-color: $brand_bg;
+}
+
+.brands_cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.brands_cards img{
+    max-width: 100%;
+    width: auto;
+}
