@@ -1,0 +1,73 @@
+@import "../util/mixins";
+@import "../util/colors";
+
+.section_slider {
+    margin-top: 58px;
+    margin-bottom: 162px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.section_slider__hearts_img{
+    position: absolute;
+    top: -27px;
+    left: 81%;
+}
+
+.section_slider__title h2{
+    @include section_2_title;
+    font-weight: bold;
+}
+
+.section_slider__subtitle p{
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.section_slider__subtitle span{
+    color: $login_color;
+}
+
+.section_slider__blocks{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.slider__block{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color:$slider_bg;
+    width: 1072px;
+    height: 354px;
+    border-radius: 20px;
+    margin-right: 42px;
+    margin-left: 42px;
+    padding: 58px 40px;
+}
+
+.slider__sign{
+    display: flex;
+    flex-direction: row;
+    margin-top: 22px;
+}
+
+.slider__image{
+    min-width: 238px;
+    height: 238px;
+    margin-right: 40px;
+}
+
+.slider__image img{
+    width: 100%;
+    height: 100%;
+}
+
+.slider__sign img{
+    max-width: 100%;
+    width: auto;
+    margin-right: 16px;
+}

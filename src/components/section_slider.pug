@@ -1,0 +1,20 @@
+mixin slider__block(src, p, src_sign, h4)
+    .slider__block
+        .slider__image 
+            img(src= src)
+        .slider__text
+            p= p 
+            .slider__sign
+                img(src= src_sign)
+                h4= h4
+section.section_slider
+        .section_slider__hearts_img
+            img(src="assets/images/hearts.png", alt="")
+        .section_slider__title 
+            h2 Pets love Mixlab!
+        .section_slider__subtitle 
+            p See why we're 5 stars on #[span Yelp], #[span Google] and #[span Facebook]:)
+        .section_slider__blocks
+            +slider__block('assets/images/slider_dog_img.png', '“Tootsie just received her Mixlab order and she’s so excited for it! Within two hours of ordering it got delivered to the house and its like she knew it was at the door. She absolutely hates taking her medicine but she truly loves her Mixlab box because it’s so informative, quick, easy to order but especially because includes a new toy each time! Thank you Mixlab for always taking care of her! She can’t wait to place her next order now!”', 'assets/images/insta_sign.png', 'Tootsie, CA')
+            +slider__block('assets/images/slider_dog_img.png', '“Tootsie just received her Mixlab order and she’s so excited for it! Within two hours of ordering it got delivered to the house and its like she knew it was at the door. She absolutely hates taking her medicine but she truly loves her Mixlab box because it’s so informative, quick, easy to order but especially because includes a new toy each time! Thank you Mixlab for always taking care of her! She can’t wait to place her next order now!”', 'assets/images/insta_sign.png', 'Tootsie, CA')
+            +slider__block('assets/images/slider_dog_img.png', '“Tootsie just received her Mixlab order and she’s so excited for it! Within two hours of ordering it got delivered to the house and its like she knew it was at the door. She absolutely hates taking her medicine but she truly loves her Mixlab box because it’s so informative, quick, easy to order but especially because includes a new toy each time! Thank you Mixlab for always taking care of her! She can’t wait to place her next order now!”', 'assets/images/insta_sign.png', 'Tootsie, CA')
