@@ -19,18 +19,14 @@
     flex-direction: row;
     justify-content: space-around;
     margin-bottom: 65px;
-    flex-wrap: wrap;
+
 }
 
 .content_item{
     width: calc(100% / 3 - 100px / 3);
     display: flex;
     flex-direction: column;
-    justify-content: center; 
-    
-    &:first-child p{
-        font-size: 16px;
-    }
+    justify-content: center;
 }
 
 .content_item .img{
@@ -43,31 +39,71 @@
     padding-bottom: 11px;
 }
 
-.content_item h4{
-    @include textblock_subtitle;
-    text-align: center;
-}  
-
-.subtitle p{
-    @include textblock_subtitle;
-    text-align: center;
-}
-
 .content_item p{
-    @include text_11px;
     text-align: center;
 }
 
-.subtitle p{
-    @include textblock_subtitle;
-    text-align: center;
-}
-
-.how_it_works_title .btn a{
+.btn a{
     @include main_button;
     margin-bottom: 52px;
 }
 
-.btn {
-    margin-bottom: 60px;
+@media  screen and (max-width: 880px) {
+    .how_it_works_title h1{
+        font-size: 34px;
+        line-height: 20px;
+        margin-top: 30px;
+        margin-bottom: 35px;
+    }
+
+    .content_item h5{
+        font-size: 20px;
+        line-height: 20px;
+        padding-bottom: 11px;
+    }
+
+    .btn a{
+        margin-bottom: 30px;
+    }
+}
+
+@media  screen and (max-width: 680px) {
+    .how_it_works_title h1{
+        font-size: 30px;
+        line-height: 20px;
+        margin-top: 20px;
+        margin-bottom: 25px;
+    }
+
+    .how_it_works_content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .content_item {
+        width: 100%;
+        padding-bottom: 15px;
+    }
+
+    .content_item h5{
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .content_item .img{
+        display: none;
+    }
+
+    .content_item img{
+        display: none;
+    }
+
+    .btn a {
+        padding: 5px 15px;
+        border-radius: 10px;
+        font-size: 10px;
+        line-height: 12px;
+    }
 }

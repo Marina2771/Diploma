@@ -57,7 +57,7 @@
     }
 }
 
-@media  screen and (max-width: 480px) {
+@media  screen and (max-width: 680px) {
     .header {
             padding-top: 15px;
             padding-bottom: 15px;
@@ -72,6 +72,13 @@
 
         .login_section {
             margin-top: 10px;
+        }
+
+        .btn_main a {
+            padding: 5px 15px;
+            border-radius: 10px;
+            font-size: 10px;
+            line-height: 12px;
         }
     }
 }
