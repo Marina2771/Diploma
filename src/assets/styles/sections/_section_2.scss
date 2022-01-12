@@ -19,9 +19,6 @@
 
 .section_2_dog1 img{
     padding-top: 27px;
-    //width: 100%;
-    //height: auto;
-    //max-width: 280px; //не применяется
     width: 43%;
 }
 .Patients {
@@ -65,5 +62,79 @@
 }
 
 .Support p{
-    @include text_11px;
+    @include textblock_15px;
+}
+
+@media  screen and (max-width: 880px) {
+    .section_2_contentplace {
+        padding-top: 30px;
+    }
+
+    .section_2.title h1 {
+        padding-right: 70px;
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .Patients {
+        padding-bottom: 15px;
+    }
+    
+    .Patients h1:first-child{
+        padding-bottom: 10px;
+    }
+    
+    .Tailored_care h1{
+        padding-top: 15px;
+        padding-bottom: 10px;
+    }
+    
+    .Tailored_care h3{
+        padding-top: 7px;
+        padding-bottom: 15px;
+    }
+
+    .Support {
+        padding-bottom: 15px;
+    }
+    
+    .Support h1{
+        padding-top: 15px;
+        padding-bottom: 10px;
+    }
+
+    .section_2_dog1 {
+        margin-bottom: 15px;
+    }  
+}
+
+@media  screen and (max-width: 780px) {
+    .section_2_contentplace {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .section_2.title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 15px;
+    }
+
+    .section_2.title h1 {
+        padding-right: 0px;
+    }
+
+    .section_2_dog1 {
+        display: none;
+    }
+}
+
+@media  screen and (max-width: 420px) {
+    .section_2.title h1 {
+        padding-right: 0px;
+        font-size: 26px;
+        line-height: 40px;
+    }    
 }
