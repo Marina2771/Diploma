@@ -38,12 +38,9 @@
         line-height: 18px;
         padding-right: 33px;
         color: $login_color;
-
     }
     
-    .btn a {
+    .btn_main a {
         @include main_button;
     }
-
 }
-@import "../util/media";
