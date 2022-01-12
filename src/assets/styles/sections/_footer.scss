@@ -8,22 +8,31 @@
 .footer_items {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .item_column {
     display: flex;
     flex-direction: column;
-    text-decoration: unset;
-    @include footer_text;
+    margin-top: 56px;
+
+    h3 {
+        @include footertitle;
+        margin-bottom: 16px;
+    }
+
+    p {
+        @include footertext;
+        margin-bottom: 4px;
+    }
 }
 
-.item_title {
-    padding-bottom: 16px;
-    @include footer_title;
+
+.item_column span {
+    color: $login_color;
 }
 
-.instagram, .facebook, .twitter, .yahoo, .google {
+.instagram, .facebook, .twitter, .yahoo, .google img{
     width: 24px;
     height: 24px;
 }
