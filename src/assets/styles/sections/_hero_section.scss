@@ -48,3 +48,55 @@
     max-width: 100%;
     padding-left: 300px;
 }
+
+@media  screen and (max-width: 880px) {
+    .hero_middle {
+        padding-top: 80px;
+    }
+
+    .rabbit_image {
+        display: none;
+    }
+    .hero_left img{
+        margin-top: -80px;
+    }
+}
+
+@media  screen and (max-width: 480px) {
+    .hero_middle {
+        padding-top: 50px;
+    }
+
+    .hero_title p {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .hero_subtitle h2 {
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+
+@media  screen and (max-width: 390px) {
+    .hero_middle {
+        padding-top: 30px;
+    }
+
+    .hero_title p {
+        font-size: 24px;
+        line-height: 40px;
+    }
+
+    .hero_subtitle h2 {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .btn a {
+        padding: 5px 20px;
+        border-radius: 10px;
+        font-size: 12px;
+        line-height: 14px;
+    }
+}
