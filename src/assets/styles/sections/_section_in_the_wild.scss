@@ -95,3 +95,13 @@
     height: 220px;
     margin-top: 452px;
 }
+
+@media  screen and (max-width: 1000px) {
+    .in_the_wild.left_img img{
+        display: none;
+    }
+
+    .in_the_wild.right_img img{
+        display: none;
+    }
+}
