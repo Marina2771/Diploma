@@ -1,0 +1,159 @@
+@import "../util/mixins";
+@import "../util/colors";
+
+.in_the_wild{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color:$in_the_wild;
+}
+
+.in_the_wild.cards_section{
+    display: flex;
+    flex-direction: column;
+}
+
+.cards_section.text{
+    display: flex;
+    flex-direction: column;
+}
+
+.cards_section.title h2{
+    @include section_2_title;
+    margin-top: 58px;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+.cards_section.subtitle p{
+    @include text_13px;
+    margin-bottom: 76px;
+}
+
+.card_blocks{
+    display: flex;
+    flex-direction: row;
+}
+
+.cards_container{
+    margin-left: 36px;
+    margin-right: 36px;
+}
+
+.cards_section.block_left{
+    width: 384px;
+    background-color: $whitecolor;
+    margin-right: 32px;
+}
+
+.cards_section.block_right{
+    width: 384px;
+    background-color: $whitecolor;
+}
+
+.date p{
+    @include date_text;
+    margin-top: 35px;
+    margin-bottom: 16px;
+}
+
+.block_title p{
+    @include content_title;
+    color: $blackcolor;
+    text-align: left;
+}
+
+.block_subtitle p{
+    @include text_11px;
+    margin-top: 12px;
+    margin-bottom: 32px;
+}
+
+.block_link {
+    margin-bottom: 36px;
+}
+
+.block.img img{
+    width: 384px;
+    height: 238px;
+}
+
+.cards_section.btn{
+    margin-top: 49px;
+    margin-bottom: 57px;
+    display: flex;
+    justify-content: center;
+}
+
+.in_the_wild.left_img img{
+    height: 277px;
+    margin-top: 312px;
+}
+
+.in_the_wild.right_img img{
+    height: 220px;
+    margin-top: 452px;
+}
+
+@media  screen and (max-width: 1000px) {
+    .in_the_wild.left_img img{
+        display: none;
+    }
+
+    .in_the_wild.right_img img{
+        display: none;
+    }
+}
+
+@media  screen and (max-width: 800px) {
+    .card_blocks{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        & :first-child{
+            margin-bottom: 10px;
+        }
+    }
+
+    .cards_section.title h2{
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+
+    .cards_section.subtitle p{
+        margin-bottom: 30px;
+    }
+
+    .cards_section.btn{
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+}
+
+@media  screen and (max-width: 680px) {
+    .cards_section.subtitle p{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media  screen and (max-width: 600px) {
+    .cards_section.title h2{
+        font-size: 30px;
+        line-height: 36px;
+    }
+}
+
+@media  screen and (max-width: 600px) {
+    .card_blocks{
+       display: none;
+    }
+}
+
+@media  screen and (max-width: 400px) {
+    .cards_section.btn {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}

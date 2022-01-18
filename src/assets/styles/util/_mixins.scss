@@ -1,0 +1,151 @@
+@import "../util/colors";
+
+@mixin menu_item{
+        font-size: 14px;
+        line-height: 18px;
+        text-decoration: none;
+        color:$blackcolor;    
+}
+
+@mixin main_button{
+        padding: 10px 35px;
+        background: $buttons_color;
+        border-radius: 19px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 18px;
+        color: $whitecolor;
+}
+
+@mixin hero_title{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 55px;
+        line-height: 67px;
+        text-align: center;
+        color:$blackcolor;
+}
+
+@mixin hero_subtitle{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 28px;
+        text-align: center;
+        color:$blackcolor;
+}
+
+@mixin section_2_title{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 44px;
+        line-height: 53px;
+        color:$blackcolor;
+}
+
+@mixin textblock_title {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 32px;
+        color:$login_color;
+}
+
+@mixin textblock_subtitle {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 23px;
+        color:$blackcolor;
+}
+
+@mixin textblock_15px{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 23px;
+        color:$blackcolor;       
+}
+
+@mixin text_11px {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 11px;
+        line-height: 23px;
+        color:$blackcolor;        
+}
+
+@mixin text_13px {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 23px;
+        color:$blackcolor;        
+}
+
+@mixin date_text {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 23px;
+        color: $date;  
+}
+
+@mixin border {
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        border-bottom-color:$bordercolor;
+}
+
+@mixin content_title {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 32px;
+        text-align: center;
+        color:$login_color;              
+}
+
+@mixin for_vet_title {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.96px;
+        text-transform: uppercase;
+        color: $for_veterinarians_title;       
+}
+
+@mixin footertitle {
+        font-family: Roboto;
+        font-style: normal;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: left;
+        letter-spacing: 0.6px;
+        text-decoration: none;
+        color: $footertitle;
+}
+
+@mixin footertext {
+        font-family: Roboto;
+        font-style: normal;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: left;
+        text-decoration: none;
+        color: $footertext;
+}

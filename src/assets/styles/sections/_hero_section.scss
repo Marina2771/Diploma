@@ -1,0 +1,102 @@
+@import "../util/colors";
+
+.hero_section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color:$hero_section;
+}
+
+.hero_left img{
+    max-width: 100%;
+    margin-top: -170px;
+}
+
+.hero_middle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 102px;
+}
+
+.hero_title{
+    padding-bottom: 33px;
+}
+
+.hero_title p{
+    @include hero_title;
+}
+
+.hero_subtitle{
+    padding-bottom: 23px;
+}
+
+.hero_subtitle h2{
+    @include hero_subtitle;
+}
+
+.hero_subtitle span{
+    color: $login_color;
+}
+
+.btn a{
+    @include main_button;
+}
+
+.rabbit_image img{
+    max-width: 100%;
+    padding-left: 300px;
+}
+
+@media  screen and (max-width: 880px) {
+    .hero_middle {
+        padding-top: 80px;
+    }
+
+    .rabbit_image {
+        display: none;
+    }
+    .hero_left img{
+        margin-top: -80px;
+    }
+}
+
+@media  screen and (max-width: 480px) {
+    .hero_middle {
+        padding-top: 50px;
+    }
+
+    .hero_title p {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .hero_subtitle h2 {
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+
+@media  screen and (max-width: 390px) {
+    .hero_middle {
+        padding-top: 30px;
+    }
+
+    .hero_title p {
+        font-size: 24px;
+        line-height: 40px;
+    }
+
+    .hero_subtitle h2 {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .btn a {
+        padding: 5px 15px;
+        border-radius: 10px;
+        font-size: 10px;
+        line-height: 12px;
+    }
+}

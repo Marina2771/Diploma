@@ -1,0 +1,64 @@
+@import "../util/mixins";
+@import "../util/colors";
+
+.footer {
+    background-color: $footerbg;
+}
+
+.footer_items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.item_column {
+    display: flex;
+    flex-direction: column;
+    margin-top: 56px;
+
+    h3 {
+        @include footertitle;
+        margin-bottom: 16px;
+    }
+
+    p {
+        @include footertext;
+        margin-bottom: 4px;
+    }
+}
+
+.item_column span {
+    color: $login_color;
+}
+
+.item_images img{
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+}
+
+@media  screen and (max-width: 480px) {
+    .item_column p{
+        display: none;
+    }
+
+    .item_column {
+        margin-top: 15px;
+    }
+
+    .item_images img{
+        display: none;
+    }
+}
+
+@media  screen and (max-width: 400px) {
+    .footer_items{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item_column {
+        margin-top: 5px;
+    }
+}
